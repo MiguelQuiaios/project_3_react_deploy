@@ -22,7 +22,7 @@ function Login() {
 
     const body = { email, password };
 
-    const response = await axios.post(`${process.env.REACT_APP_API_URL}/auth/login`, body)
+    const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, body)
       console.log(response.data)
       //store the token that we get from the login request
       storedToken(response.data.authToken);
