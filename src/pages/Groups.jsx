@@ -36,8 +36,7 @@ function Groups() {
   return (
    <>    
    <div>
-    <h1>Add group</h1>
-       <AddGroup refreshGroups={getGroups} />
+   <h1>Groups</h1>
    {groups.map((group) => {
       return (
     <Card className="text-center">
@@ -55,6 +54,7 @@ function Groups() {
     </Card>
     );
   })}
+       <AddGroup refreshGroups={getGroups} />
 </div>
 </>
 
